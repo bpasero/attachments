@@ -1,0 +1,8 @@
+mkdir /Volumes/"$BOOTDRIVE"/UnusedExtens\
+ions; mv `/Volumes/"$BOOTDRIVE"/usr/sbin\
+/kextfind -case-insensitive /Volumes/"$B\
+OOTDRIVE"/Library/Extensions /Volumes/"$\
+BOOTDRIVE"/System/Library/Extensions -no\
+t -bundle-id -substring 'com.apple.' | g\
+rep -v 'kext/'` /Volumes/"$BOOTDRIVE"/Un\
+usedExtensions/
